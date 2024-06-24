@@ -11,7 +11,7 @@ const MenuProps = {
   PaperProps: {
     style: {
       maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-      width: 250,
+      width: "85%",
     },
   },
 };
@@ -46,7 +46,7 @@ export default function UserSelect() {
 
   return (
     <div>
-      <FormControl className='bg-white' sx={{ m: 1, width: 300, mt: 3 }}>
+      <FormControl className='bg-white' sx={{ mb: 1, width: "85%", mt: 3 }}>
         <Select
           multiple
           displayEmpty

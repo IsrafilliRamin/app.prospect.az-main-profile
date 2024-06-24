@@ -12,7 +12,7 @@ export default function UserInputSearch() {
     <Paper
     
       component="form"
-      sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 250 }}
+      sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: "85%" }}
     >
      
       <InputBase

@@ -10,9 +10,9 @@ import UserTable from '../components/spesific/User/UserTable'
 const User = () => {
   return (
     <div className='flex ml-[100px] h-[100vh]  p-3 mt-[84px] bg-slate-200 text-black'>
-      <div className="w-[320px] border-r-4 border-gray-400">
+      <div className="w-[320px] py-3 border-r-4 border-gray-400">
         <h2 className='pl-5 text-2xl flex items-center h-20 border-b-2 border-white'> Istifadeciler</h2>
-        <div className='pl-5 text-2xl flex flex-col gap-3  py-3 border-b-2 border-white'>
+        <div className='pl-5 text-2xl flex flex-col gap-3   border-b-2 border-white'>
           <h3>Biznes blok</h3>
           <UserSelect/>
         </div>
