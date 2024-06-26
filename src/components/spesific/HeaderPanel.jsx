@@ -23,7 +23,7 @@ const HeaderPanel = () => {
 
   
   const {heightValue} = useSelector(state=> state.allState);
-console.log(heightValue);
+
   return (
     <div style={{ height: `${heightValue}px` }} className={classNames('flex bg-green-500 fixed  top-0 left-0 pl-32 z-10  w-full justify-between',[`h-[${heightValue}px]`])}>
       {/*  <ButtonCom icon={<AutoAwesomeMosaicIcon className='!text-6xl'/>} text="" color="success"  /> */}

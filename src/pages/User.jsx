@@ -7,9 +7,11 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import UserPopover from '../components/spesific/User/UserPopHover'
 import UserPopupState from '../components/spesific/User/UserPopHover'
 import UserTable from '../components/spesific/User/UserTable'
+import { useSelector } from 'react-redux'
 const User = () => {
+  const {heightValue} = useSelector(state=> state.allState);
   return (
-    <div className='flex ml-[100px] h-[100vh]  p-3 mt-[84px] bg-slate-200 text-black'>
+    <div style={{marginTop:`${heightValue}px`}} className='flex ml-[100px] h-[100vh]  p-3 mt-[84px] bg-slate-200 text-black'>
       <div className="w-[320px] py-3 border-r-4 border-gray-400">
         <h2 className='pl-5 text-2xl flex items-center h-20 border-b-2 border-white'> Istifadeciler</h2>
         <div className='pl-5 text-2xl flex flex-col gap-3   border-b-2 border-white'>

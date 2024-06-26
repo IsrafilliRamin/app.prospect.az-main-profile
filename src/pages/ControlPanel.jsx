@@ -5,6 +5,7 @@ import ResponsiveGrid2 from '../components/spesific/ControlSpes/ControlSection2'
 import BasicTableControl from '../components/spesific/ControlSpes/ControlEndTable'
 import BasicPieControl from '../components/spesific/ControlSpes/PieControl'
 import { FormControl, InputLabel, MenuItem, Select } from '@mui/material'
+import { useSelector } from 'react-redux'
 
 const ControlPanel = () => {
   const [uzman, setAge] = React.useState('');
@@ -12,8 +13,9 @@ const ControlPanel = () => {
   const handleChange = (event) => {
       setAge(event.target.value);
   };
+  const {heightValue} = useSelector(state=> state.allState);
   return (
-    <div className='ml-[110px]  flex flex-col gap-10 p-3 mt-[90px] bg-slate-200 text-black'>
+    <div style={{marginTop:`${heightValue}px`}} className='ml-[110px]  flex flex-col gap-10 p-3 mt-[90px] bg-slate-200 text-black'>
       <ControlHead />
       <ControlSection />
       <ResponsiveGrid2 />

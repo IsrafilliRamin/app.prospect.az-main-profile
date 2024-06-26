@@ -11,11 +11,12 @@ import ConnectTable from '../components/spesific/Connections/ConnectTable'
 import ConnectPopupState from '../components/spesific/Connections/ConnectPop'
 import ConnectButtonGroup from '../components/spesific/Connections/ConnectButtonGro';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 const Brand = () => {
- 
+  const {heightValue} = useSelector(state=> state.allState);
     return (
    
-      <div className='flex ml-[100px]   p-3 mt-[84px] bg-slate-200 text-black'>
+      <div style={{marginTop:`${heightValue}px`}} className='flex ml-[100px]   p-3 mt-[84px] bg-slate-200 text-black'>
         <div className="w-[320px] border-r-4 border-gray-400 h-[100vh] overflow-y-scroll">
           <h2 className='pl-5 text-2xl flex items-center h-20 border-b-2 border-white'> Əlaqələr</h2>
           <div className='pl-5 text-2xl flex flex-col gap-3  py-3 border-b-2 border-white'>
